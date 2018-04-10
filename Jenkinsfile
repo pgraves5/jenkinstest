@@ -12,11 +12,11 @@ pipeline {
       steps {
         sh 'mvn -v'
       }
-      stage('Shared Lib') {
+    }
+    stage('Shared Lib') {
          steps {
              helloWorld("Jenkins")
          }
-      }
     }
   }
 }
